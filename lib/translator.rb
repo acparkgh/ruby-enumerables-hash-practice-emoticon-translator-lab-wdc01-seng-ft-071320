@@ -7,7 +7,7 @@ def load_library(yaml_file)
   
   library = YAML.load_file(yaml_file)
   
-  emoticon_library = {}
+  emoticons_library = {}
   library.each do | key, value_array |
       emoticon_library[key] = {}
     value_array.each do | emoticon |
