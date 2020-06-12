@@ -26,10 +26,10 @@ def get_japanese_emoticon(file_path, western_emoticon)
   emoticon_library = load_library(file_path)
   
   japanese_translation = nil
-  emoticon_library.each do | key, value |
+  emoticon_library.each do | key_emoticon_name, value |
     value.each do | lang, emo |
       if lang == :english && emo == western_emoticon
-        japanese_translation = emoticon_library[key][:japanese]
+        japanese_translation = emoticon_library[key_emoticon_name][:japanese]
       end      
     end
   end
