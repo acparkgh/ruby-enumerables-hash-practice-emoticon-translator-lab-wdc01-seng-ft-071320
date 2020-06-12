@@ -5,17 +5,17 @@ require 'yaml'
 def load_library(yaml_file)
   # code goes here
   
-  emoticon_library = YAML.load_file(yaml_file)
+  library = YAML.load_file(yaml_file)
   
-  emoticons = { "english": "", "japanese": "" }
-  
-  emoticon_library.each do | key, value |
+  emoticon_library = {}
+  library.each do | key, value |
+      emoticon_library[key] = {}
     value.each do | emoticon |
       emoticons[key][:english] = emoticon[0]
       emoticons[key][:japanese] = emoticon[1]
     
     end
-    emoticons
+    emoticon_library
   end
   
   
