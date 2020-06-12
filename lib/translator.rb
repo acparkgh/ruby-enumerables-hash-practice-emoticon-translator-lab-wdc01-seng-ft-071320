@@ -32,11 +32,7 @@ def get_english_meaning (file_path, emoticon)
   puts emoticon_library
   emoticon_library.each do | key, value |
     value.each do | lang, emo |
-      if lang == :japanese && emo == emoticon
-         return key
-      else
-         return "Sorry, that emoticon was not found"
-      end   
+      lang == :japanese && emo == emoticon ? key : "Sorry, that emoticon was not found"
     end
   end
 end
