@@ -5,7 +5,7 @@ require 'yaml'
 def load_library(yaml_file)
   # code goes here
   
-  emoticons = YAML.load_file(yaml_file)
+  emoticon_library = YAML.load_file(yaml_file)
   
   
   
