@@ -28,6 +28,11 @@ def get_english_meaning (file_path, emoticon)
   # code goes here
   
   emoticon_library = load_library(file_path)
-  
-  
+  emoticon_library.each do | key, value |
+  value.each do | lang, emo |
+    if lang == :japanese && emo == emoticon
+      p key
+    end
+  end
 end
+  
