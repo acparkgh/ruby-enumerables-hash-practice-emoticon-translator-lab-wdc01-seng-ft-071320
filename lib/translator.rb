@@ -7,6 +7,7 @@ def load_library(yaml_file)
   
   emoticon_library = YAML.load_file(yaml_file)
   
+  emoticons = 
   
   
   
