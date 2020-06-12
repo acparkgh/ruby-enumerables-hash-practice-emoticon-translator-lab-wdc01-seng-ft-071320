@@ -38,6 +38,6 @@ def get_english_meaning (file_path, emoticon)
       end  
     end
   end
-  eng_translation == nil ? "Sorry, that emoticon was not found" : english_translation
+  english_translation == nil ? "Sorry, that emoticon was not found" : english_translation
 end
   
