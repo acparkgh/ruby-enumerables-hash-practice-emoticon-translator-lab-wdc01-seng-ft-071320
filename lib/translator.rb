@@ -13,16 +13,16 @@ def load_library(yaml_file)
     emoticons_library[key][:english] = value_array[0]
     emoticons_library[key][:japanese] = value_array[1]
     
-    end
-    emoticons_library
   end
-  
-  
-  
-  
-  
-  
+    emoticons_library
 end
+  
+  
+  
+  
+  
+  
+
 
 def get_japanese_emoticon
   # code goes here
