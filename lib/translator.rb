@@ -11,6 +11,10 @@ def load_library(yaml_file)
   library.each do | key, value_array |
       emoticons_library[key] = {}
     value_array.each do | emoticon |
+      if 
+      
+      
+      
       emoticons_library[key][:english] = emoticon
       emoticons_library[key][:japanese] = emoticon
     
