@@ -38,15 +38,15 @@ end
 
 
 
-def get_english_meaning (file_path, emoticon)
+def get_english_meaning (file_path, japanese_emoticon)
   # code goes here
   
   emoticon_library = load_library(file_path)
   
   english_translation = nil
   emoticon_library.each do | key_emoticon_name, value |
-    value.each do | language, emo |
-      if language == :japanese && emo == emoticon
+    value.each do | language, emoticon |
+      if language == :japanese && emoticon == japanese_emoticon
          english_translation = key_emoticon_name
       end  
     end
