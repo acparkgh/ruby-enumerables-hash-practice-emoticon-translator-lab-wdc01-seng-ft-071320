@@ -35,7 +35,7 @@ def get_english_meaning (file_path, emoticon)
       if lang == :japanese && emo == emoticon
          return key
       elsif
-         return 
+         return "Sorry, that emoticon was not found"
       end   
     end
   end
