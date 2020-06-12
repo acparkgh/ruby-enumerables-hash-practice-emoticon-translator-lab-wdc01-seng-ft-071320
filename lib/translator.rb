@@ -34,7 +34,7 @@ def get_japanese_emoticon(file_path, western_emoticon)
     end
     
   end
-  japanese_translation = nil ? 
+  japanese_translation = nil ? "Sorry, that emoticon was not found" : japanese_translation
 end
 
 
