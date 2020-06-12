@@ -30,17 +30,14 @@ def get_english_meaning (file_path, emoticon)
   
   emoticon_library = load_library(file_path)
   
-  eng_translation = nil
+  english_translation = nil
   emoticon_library.each do | key, value |
     value.each do | lang, emo |
-
       if lang == :japanese && emo == emoticon
-         eng_translation = key
+         english_translation = key
       end  
     end
   end
-    
-    eng_translation == nil ? "Sorry, that emoticon was not found" : eng_translation
-   
+  eng_translation == nil ? "Sorry, that emoticon was not found" : eng_translation
 end
   
