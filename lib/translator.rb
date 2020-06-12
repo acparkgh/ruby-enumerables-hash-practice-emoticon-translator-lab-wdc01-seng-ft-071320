@@ -27,8 +27,8 @@ def get_japanese_emoticon(file_path, western_emoticon)
   
   japanese_translation = nil
   emoticon_library.each do | key_emoticon_name, value |
-    value.each do | language, emo |
-      if language == :english && emo == western_emoticon
+    value.each do | language, emoticon |
+      if language == :english && emoticon == western_emoticon
         japanese_translation = emoticon_library[key_emoticon_name][:japanese]
       end      
     end
