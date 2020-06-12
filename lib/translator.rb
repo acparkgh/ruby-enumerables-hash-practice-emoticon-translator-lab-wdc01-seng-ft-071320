@@ -15,7 +15,7 @@ def load_library(yaml_file)
       emoticons_library[key][:japanese] = emoticon[1]
     
     end
-    emoticon_library
+    emoticons_library
   end
   
   
