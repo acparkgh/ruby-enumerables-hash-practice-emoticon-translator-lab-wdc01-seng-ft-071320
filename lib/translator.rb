@@ -9,10 +9,10 @@ def load_library(yaml_file)
   
   emoticons_library = {}
   
-    library.each do | key, value_array |
-      emoticons_library[key] = {}
-      emoticons_library[key][:english] = value_array[0]
-      emoticons_library[key][:japanese] = value_array[1]
+    library.each do | key_emoticon_name, value_eng_jap_in_array |
+      emoticons_library[key_emoticon_name] = {}
+      emoticons_library[key_emoticon_name][:english] = value_eng_jap_in_array[0]
+      emoticons_library[key_emoticon_name][:japanese] = value_eng_jap_in_array[1]
     
     end
   emoticons_library
